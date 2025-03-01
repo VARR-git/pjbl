@@ -39,6 +39,7 @@ $result = $conn->query($sql);
     <title>Daftar Kartu Tidak Terdaftar</title>
 </head>
 <body>
+    <?php include 'header.php'; ?>
     <h2>Daftar Kartu Tidak Terdaftar</h2>
     <table border="1">
         <tr>

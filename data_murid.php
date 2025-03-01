@@ -17,9 +17,10 @@ $result = mysqli_query($conn, $query);
 <html>
 <head>
     <title>Data Siswa</title>
-    <link rel="stylesheet" href="css/styleSiswa.css">
+    <link rel="stylesheet" href="css/styleMurid.css">
 </head>
 <body>
+    <?php include 'header.php'; ?>
     <h2>Data Murid</h2>
 
     <!-- Tabel Data Siswa -->
@@ -44,6 +45,5 @@ $result = mysqli_query($conn, $query);
     </table>
 
     <br>
-    <a href="dashboard.php">Kembali ke Dashboard</a>
 </body>
 </html>

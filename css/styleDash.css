@@ -1,66 +1,11 @@
 /* styleDash.css */
-
-/* Reset beberapa gaya default */
-body, h1, h2, p, ul {
-    margin: 0;
-    padding: 0;
-}
-
-/* Gaya untuk body */
-body {
+/* Reset Dasar */
+body, h2, table, a {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
-    padding: 20px;
 }
 
-/* Gaya untuk header */
-header {
-    background-color: #4CAF50; /* Warna latar belakang header */
-    color: white; /* Warna teks header */
-    padding: 15px; /* Padding untuk header */
-    text-align: center; /* Teks di tengah */
-    border-radius: 5px; /* Sudut membulat */
-    margin-bottom: 20px; /* Jarak bawah header */
-}
-
-/* Gaya untuk judul */
-h2 {
-    color: #4CAF50; /* Warna hijau */
-    margin-bottom: 20px;
-}
-
-/* Gaya untuk paragraf */
-p {
-    margin-bottom: 20px;
-}
-
-/* Gaya untuk navigasi */
-ul {
-    list-style-type: none; /* Menghilangkan bullet */
-    padding: 0;
-}
-
-ul li {
-    display: inline; /* Menampilkan item dalam satu baris */
-    margin-right: 15px; /* Jarak antar item */
-}
-
-ul li a {
-    text-decoration: none; /* Menghilangkan garis bawah */
-    color: #fff; /* Warna teks */
-    background-color: #4CAF50; /* Warna latar belakang */
-    padding: 10px 15px; /* Padding untuk tombol */
-    border-radius: 5px; /* Sudut membulat */
-    transition: background-color 0.3s; /* Efek transisi */
-}
-
-ul li a:hover {
-    background-color: #45a049; /* Warna latar belakang saat hover */
-}
-
-/* Gaya untuk konfirmasi logout */
-ul li a:active {
-    background-color: #3e8e41; /* Warna latar belakang saat ditekan */
+p, h2 {
+    margin-top: 10px;
+    margin-left: 10px;
 }
