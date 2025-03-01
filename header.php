@@ -77,15 +77,22 @@
         .options-list li {
             cursor: pointer;
             border-bottom: 1px solid #444;
-            padding: 15px;
             text-align: center;
+            height: 50px; /* Atur tinggi agar teks bisa dipusatkan */
+            display: flex; /* Flexbox untuk pemusatan */
+            align-items: center; /* Pusatkan vertikal */
+            justify-content: center; /* Pusatkan horizontal */
         }
 
         .options-list li a {
             text-decoration: none;
             color: white;
-            display: block;
             font-size: 18px;
+            width: 100%; /* Pastikan link mengisi seluruh lebar li */
+            height: 100%; /* Pastikan link mengisi seluruh tinggi li */
+            display: flex; /* Flexbox untuk pemusatan */
+            align-items: center; /* Pusatkan vertikal */
+            justify-content: center; /* Pusatkan horizontal */
         }
 
         .options-list li:hover {

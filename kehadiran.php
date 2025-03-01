@@ -15,6 +15,7 @@ $result = mysqli_query($conn, $query);
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <?php include 'header.php'; ?>
     <h2>Data Kehadiran Siswa</h2>
     <table border="1">
         <tr>
@@ -36,6 +37,5 @@ $result = mysqli_query($conn, $query);
         </tr>
         <?php endwhile; ?>
     </table>
-    <a href="dashboard.php">Kembali</a>
 </body>
 </html>
