@@ -20,7 +20,7 @@ $result = mysqli_query($conn, $query);
     <link rel="stylesheet" href="css/styleSiswa.css">
 </head>
 <body>
-    <h2>Data Siswa</h2>
+    <h2>Data Murid</h2>
 
     <!-- Tabel Data Siswa -->
     <table border="1" cellpadding="10" cellspacing="0">
