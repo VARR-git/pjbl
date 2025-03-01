@@ -16,7 +16,7 @@ $result = mysqli_query($conn, $query);
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Data Siswa</title>
+    <title>Data Murid</title>
     <link rel="stylesheet" href="css/styleMurid.css">
 </head>
 <body>
