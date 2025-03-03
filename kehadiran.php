@@ -23,7 +23,9 @@ $result = mysqli_query($conn, $query);
             <th>No</th>
             <th>Nama</th>
             <th>Kelas</th>
-            <th>Waktu</th>
+            <th>Tanggal</th>
+            <th>Jam Masuk</th>
+            <th>Jam Keluar</th>
             <th>Keterangan</th>
         </tr>
         <?php 
@@ -33,7 +35,9 @@ $result = mysqli_query($conn, $query);
             <td><?= $no++; ?></td>
             <td><?= $row['nama']; ?></td>
             <td><?= $row['kelas']; ?></td>
-            <td><?= $row['waktu']; ?></td>
+            <td><?= $row['tanggal']; ?></td>
+            <td><?= $row['jam_masuk']; ?></td>
+            <td><?= $row['jam_keluar']; ?></td>
             <td><?= $row['keterangan']; ?></td>
         </tr>
         <?php endwhile; ?>
