@@ -7,7 +7,7 @@
         header {
             font-family: Arial, sans-serif;
             width: 100%;
-            background-color: #4CAF50; /* Warna hijau */
+            background-color:rgb(242, 48, 48);
             color: white;
             display: flex;
             align-items: center;

@@ -21,12 +21,12 @@ if (isset($_GET['action']) && isset($_GET['uid'])) {
         $stmt = $conn->prepare($registerSQL);
         $stmt->bind_param("s", $uid);
         $stmt->execute();
-        $deleteSQL = "DELETE FROM kartu_invalid WHERE uid = ?";
-        $stmt = $conn->prepare($deleteSQL);
+        $deleteSQL2 = "DELETE FROM kartu_invalid WHERE uid = ?";
+        $stmt = $conn->prepare($deleteSQL2);
         $stmt->bind_param("s", $uid);
         $stmt->execute();
+        header("Location: register.php");
     }
-    header("Location: register.php");
     exit();
 }
 
@@ -38,6 +38,7 @@ $result = $conn->query($sql);
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Kartu Tidak Terdaftar</title>
+    <link rel="stylesheet" href="css/styleKartu.css">
 </head>
 <body>
     <?php include 'header.php'; ?>

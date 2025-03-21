@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if($data) {
             if (is_null($data['jam_keluar']) && $waktu_sekarang_int >= $batas_keluar) {
-                $updateQuery = "UPDATE data_absen SET jam_keluar = '$waktu_sekarang' WHERE id = " . $data['id'];
+                $updateQuery = "UPDATE data_absen SET jam_keluar = '$waktu_sekarang' WHERE nama = '$nama_murid'";
                 mysqli_query($conn, $updateQuery);
                 echo "Jam keluar tercatat: " . $waktu_sekarang;
             } else {
