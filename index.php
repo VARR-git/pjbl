@@ -1,17 +1,27 @@
 <?php
 session_start();
-include 'config/db.php';
+
+if (isset($_SESSION['username'])) {
+    header('Location: dashboard.php');
+    exit();
+}
+
+$login_success = false;
 
 if (isset($_POST['login'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
+    include 'config/db.php';
+    
     $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
     $result = mysqli_query($conn, $query);
 
     if (mysqli_num_rows($result) === 1) {
+        $login_success = true;
         $_SESSION['username'] = $username;
         header('Location: dashboard.php');
+        exit();
     } else {
         echo "<script>alert('Username atau password salah');</script>";
     }
@@ -26,6 +36,7 @@ if (isset($_POST['login'])) {
 </head>
 <body>
     <div class="login-form">
+        <img src="icon/mitra.png" alt="Logo Mitra" class="login-logo">
         <h2>Login</h2>
         <form method="post">
             <input type="text" name="username" placeholder="Username" required>

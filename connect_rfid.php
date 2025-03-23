@@ -1,6 +1,6 @@
 <?php
 header("Content-Type: application/json");
-include 'config/db.php';
+include '.../config/db.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $uid = $_POST['uid'];
