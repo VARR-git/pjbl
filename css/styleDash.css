@@ -1,11 +1,28 @@
-/* styleDash.css */
-/* Reset Dasar */
-body, h2, table, a {
-    font-family: Arial, sans-serif;
-    color: #333;
-}
-
-p, h2 {
-    margin-top: 10px;
-    margin-left: 10px;
-}
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    min-width: 600px; /* Atur minimal lebar tabel, sehingga bila layar HP lebih kecil akan muncul scroll horizontal */
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 8px;
+  }
+  
+  th {
+    background-color: rgb(92, 155, 255);
+    color: white;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  
